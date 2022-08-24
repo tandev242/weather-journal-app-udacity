@@ -1,0 +1,24 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "Udacity course",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "project",
+    "backend",
+    "api"
+  ],
+  "author": "Tan Dev Zai",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
