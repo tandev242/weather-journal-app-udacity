@@ -17,7 +17,6 @@ app.get('/getAll', (req, res) => {
 })
 
 app.post('/addWeatherData', (req, res) => {
-    console.log('haha')
     projectData = req.body
     res.status(201).send(projectData)
 })

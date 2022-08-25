@@ -6,7 +6,7 @@ const apiKey = "1b86b130d14d2ae74260ab64fa44ad20"
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 const btn = document.getElementById('generate')
 const date = document.getElementById('date')
@@ -44,7 +44,7 @@ async function generateWeather() {
 }
 
 async function fetchWeatherData(zipCode) {
-    const apiURL = baseURL + zipCode + '&appid=' + apiKey
+    const apiURL = `${baseURL + zipCode}&appid=${apiKey}&units=unit`
     try {
         const res = await fetch(apiURL)
         const data = await res.json()
